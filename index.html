@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Projetos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Gerenciamento de Projetos</h1>
+
+    <form id="projectForm">
+        <input type="hidden" id="projectId" />
+        <label for="name">Nome do Projeto:</label>
+        <input type="text" id="name" required>
+        
+        <label for="description">Descrição:</label>
+        <input type="text" id="description" required>
+        
+        <label for="status">Status:</label>
+        <input type="text" id="status" required>
+        
+        <label for="startDate">Data de Início:</label>
+        <input type="date" id="startDate" required>
+        
+        <label for="endDate">Data de Conclusão:</label>
+        <input type="date" id="endDate" required>
+        
+        <button type="submit">Salvar Projeto</button>
+    </form>
+
+    <table id="projectTable">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Descrição</th>
+                <th>Status</th>
+                <th>Início</th>
+                <th>Conclusão</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
